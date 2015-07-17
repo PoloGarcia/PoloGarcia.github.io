@@ -1,12 +1,18 @@
 /* line 1, ../sass/_base.scss */
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 17px;
   color: #FFF;
   font-weight: 100;
   width: 100%;
   height: 100%;
   margin: 0;
+  font-size: 50px;
+}
+
+/* line 9, ../sass/_base.scss */
+.noscroll {
+  position: fixed;
+  overflow-y: scroll;
 }
 
 /* line 3, ../sass/_landing.scss */
@@ -16,7 +22,7 @@ body {
   transform: translateY(-50%);
 }
 
-/* line 12, ../sass/_landing.scss */
+/* line 9, ../sass/_landing.scss */
 #section-1 {
   background: -webkit-linear-gradient(rgba(0, 22, 86, 0.6), rgba(25, 117, 255, 0.6)), url("../assets/img/cover-picture.png") no-repeat center center fixed;
   background: -moz-linear-gradient(rgba(0, 22, 86, 0.6), rgba(25, 117, 255, 0.6)), url("../assets/img/cover-picture.png") no-repeat center center fixed;
@@ -29,10 +35,10 @@ body {
   height: 100vh;
   color: #FFF;
 }
-/* line 17, ../sass/_landing.scss */
+/* line 14, ../sass/_landing.scss */
 #section-1 h1 {
   font-weight: 100;
-  font-size: 70px;
+  font-size: 1.7em;
   text-align: center;
   margin-bottom: 10px;
   width: 50%;
@@ -40,59 +46,53 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  margin-top: 0px;
 }
-/* line 22, ../sass/_landing.scss */
+/* line 20, ../sass/_landing.scss */
 #section-1 img {
   height: 30vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 27, ../sass/_landing.scss */
+/* line 25, ../sass/_landing.scss */
 #section-1 .logo {
-  font-size: 50px;
+  font-size: 1.25em;
   width: 100%;
   text-align: center;
   color: #FFF;
 }
-/* line 34, ../sass/_landing.scss */
+/* line 31, ../sass/_landing.scss */
 #section-1 .logo .bold {
   font-weight: 900;
 }
-/* line 38, ../sass/_landing.scss */
+/* line 35, ../sass/_landing.scss */
 #section-1 .logo .thin {
   font-weight: 100;
 }
-/* line 43, ../sass/_landing.scss */
+/* line 40, ../sass/_landing.scss */
 #section-1 p {
   margin-top: 20px;
   font-weight: 300;
   width: 60%;
   text-align: center;
-  font-size: 20px;
+  font-size: .5em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-weight: 100;
 }
 
-/* line 54, ../sass/_landing.scss */
+/* line 51, ../sass/_landing.scss */
 #section-2 {
   height: 100vh;
   background-color: #FAFAFA;
   color: #4D94FF;
 }
-/* line 59, ../sass/_landing.scss */
-#section-2 .content {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-/* line 63, ../sass/_landing.scss */
+/* line 56, ../sass/_landing.scss */
 #section-2 h1 {
   font-weight: 100;
-  font-size: 70px;
+  font-size: 1.7em;
   text-align: center;
   margin-bottom: 10px;
   width: 50%;
@@ -103,17 +103,17 @@ body {
   margin-bottom: 40px;
   font-weight: 300;
 }
-/* line 71, ../sass/_landing.scss */
+/* line 64, ../sass/_landing.scss */
 #section-2 form .form-element {
   display: block;
 }
-/* line 73, ../sass/_landing.scss */
+/* line 66, ../sass/_landing.scss */
 #section-2 form .form-element input[type=text] {
   border-style: none;
   background: none;
   outline: none;
   border-bottom: solid 2px #c7c7c7;
-  font-size: 50px;
+  font-size: 1.25em;
   font-weight: 100;
   font-family: 'Lato', sans-serif;
   width: 60%;
@@ -125,13 +125,13 @@ body {
   transition: all 0.3s ease 0s;
   padding-bottom: 20px;
 }
-/* line 90, ../sass/_landing.scss */
+/* line 83, ../sass/_landing.scss */
 #section-2 form .form-element input[type=text]:focus {
   border-bottom: solid 2px #4D94FF;
 }
-/* line 94, ../sass/_landing.scss */
+/* line 87, ../sass/_landing.scss */
 #section-2 form .form-element button {
-  font-size: 50px;
+  font-size: 1.25em;
   font-weight: 100;
   font-family: 'Lato', sans-serif;
   background: #4D94FF;
@@ -145,44 +145,44 @@ body {
   transition: all 0.3s ease 0s;
   padding: 20px 20px 20px 20px;
 }
-/* line 110, ../sass/_landing.scss */
+/* line 103, ../sass/_landing.scss */
 #section-2 form .form-element button:hover {
   background: none;
   color: #4D94FF;
   border: 1px solid #4D94FF;
 }
-/* line 43, ../sass/_mixins.scss */
+/* line 41, ../sass/_mixins.scss */
 #section-2 ::-webkit-input-placeholder {
   color: #c7c7c7;
   font-weight: 100;
 }
-/* line 48, ../sass/_mixins.scss */
+/* line 46, ../sass/_mixins.scss */
 #section-2 :-moz-placeholder {
   /* Firefox 18- */
   color: #c7c7c7;
   font-weight: 100;
 }
-/* line 53, ../sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 #section-2 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #c7c7c7;
   font-weight: 100;
 }
-/* line 58, ../sass/_mixins.scss */
+/* line 56, ../sass/_mixins.scss */
 #section-2 :-ms-input-placeholder {
   color: #c7c7c7;
   font-weight: 100;
 }
 
-/* line 123, ../sass/_landing.scss */
+/* line 116, ../sass/_landing.scss */
 #section-3 {
   background-color: #4D94FF;
   height: 100vh;
 }
-/* line 127, ../sass/_landing.scss */
+/* line 120, ../sass/_landing.scss */
 #section-3 h1 {
   font-weight: 100;
-  font-size: 70px;
+  font-size: 1.7em;
   text-align: center;
   margin-bottom: 10px;
   width: 50%;
@@ -192,37 +192,37 @@ body {
   color: #FFF;
   margin-top: 0;
 }
-/* line 133, ../sass/_landing.scss */
+/* line 126, ../sass/_landing.scss */
 #section-3 .pricing-table {
   width: 100%;
 }
-/* line 135, ../sass/_landing.scss */
+/* line 128, ../sass/_landing.scss */
 #section-3 .pricing-table .price {
   color: #FAFAFA;
   text-align: center;
-  font-size: 30px;
+  font-size: .75em;
   width: 30%;
   display: inline-block;
   padding: 20px 20px 20px 20px;
 }
-/* line 136, ../sass/_landing.scss */
+/* line 129, ../sass/_landing.scss */
 #section-3 .pricing-table .price img {
   width: 15%;
 }
-/* line 139, ../sass/_landing.scss */
+/* line 132, ../sass/_landing.scss */
 #section-3 .pricing-table .price h2 {
   font-weight: 300;
 }
-/* line 149, ../sass/_landing.scss */
+/* line 142, ../sass/_landing.scss */
 #section-3 .pricing-table .price .description {
-  font-size: 2vh;
+  font-size: .60em;
 }
-/* line 153, ../sass/_landing.scss */
+/* line 146, ../sass/_landing.scss */
 #section-3 .pricing-table .price .money {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 1.25em;
 }
-/* line 157, ../sass/_landing.scss */
+/* line 150, ../sass/_landing.scss */
 #section-3 .pricing-table .price:first-child {
   border-right: solid 1px #FFF;
   margin-left: 18%;

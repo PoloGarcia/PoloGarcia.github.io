@@ -1,6 +1,5 @@
 @mixin text-body{
 	font-family: 'Lato', sans-serif;
-	font-size: 17px;
 	color: $pure-white;
 	font-weight: $light;
 }
@@ -31,12 +30,11 @@
 
 @mixin headers{
 	font-weight: $light;
-	font-size: 70px;
+	font-size: 1.7em;
 	text-align: center;
 	margin-bottom: 10px;
 	width:50%;
 	@include center-horizontal;
-
 }
 
 @mixin placeholder ($color,$font-weight){
